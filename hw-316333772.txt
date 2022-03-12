@@ -1,0 +1,24 @@
+//1
+
+def my_func(x1, x2, x3):
+    if x1==0 or x2==0 or x3 == 0:
+        print("Not a number - denonator equals zero")
+    elif not isinstance (x1 , float) or not isinstance (x2 , float) or not isinstance (x3 , float):
+        print('Error: parameters shold be float')
+    else:
+        print (float((x1+x2+x3)*(x2+x3)*x3)/(x1+x2+x3))
+
+my_func(6.2,7.1,1.1)
+
+//2
+
+def convert(hours, minutes):
+    if hours < 0 or minutes < 0:
+        print('Input error!')
+    else:
+        intHours = int(hours)
+        floatHours = hours - intHours
+        minHours = (floatHours*60)
+        print (float(intHours*3600 + minHours * 60 + minutes*60))
+    
+convert (3.04, 5)
